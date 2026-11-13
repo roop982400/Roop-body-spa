@@ -1,75 +1,285 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roop Body Spa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roop Body Spa | Amritsar</title>
+<meta name="description" content="Welcome to Roop Body Spa, Amritsar. Share your experience and connect with us on WhatsApp.">
+
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial;
-  background: #17131c;
-  color: white;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #100d12;
+  color: #fff;
+  min-height: 100vh;
   padding: 25px 15px;
 }
-.card {
-  max-width: 450px;
-  margin: auto;
-  background: #29212e;
-  padding: 25px;
-  border-radius: 18px;
+
+.container {
+  max-width: 480px;
+  margin: 20px auto;
+  background: linear-gradient(145deg,#29202c,#151118);
+  border: 1px solid #b99a55;
+  border-radius: 22px;
+  padding: 30px 22px;
+  text-align: center;
+  box-shadow: 0 10px 40px #000;
 }
-h1 { color: #eac47b; }
-button {
+
+.logo {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #e7c77d;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #ddd0b5;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.line {
+  height: 1px;
+  background: #b99a55;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #e7c77d;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.review {
+  background: #211b25;
+  border: 1px solid #65502c;
+  padding: 16px;
+  border-radius: 13px;
+  margin: 13px 0;
+  text-align: left;
+}
+
+.review p {
+  font-size: 14px;
+  color: #eee;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+button, .link {
+  display: block;
   width: 100%;
-  padding: 15px;
-  margin: 9px 0;
   border: none;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 9px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
-.review { background: #f2d18d; }
-.whatsapp { background: #25D366; }
-.google { background: white; }
+
+.copy {
+  background: #d9b96d;
+  color: #171116;
+}
+
+.google {
+  background: #fff;
+  color: #202124;
+  margin-top: 15px;
+}
+
+.whatsapp {
+  background: #20bd68;
+  color: white;
+  margin-top: 12px;
+}
+
+.location {
+  background: #34303b;
+  color: #fff;
+  border: 1px solid #b99a55;
+  margin-top: 12px;
+}
+
+.call {
+  background: #b99a55;
+  color: #171116;
+  margin-top: 12px;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+.address {
+  color: #ccc;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-top: 22px;
+}
+
+.footer {
+  color: #b99a55;
+  font-size: 12px;
+  margin-top: 22px;
+}
 </style>
 </head>
+
 <body>
-<div class="card">
-<h1>ROOP BODY SPA</h1>
-<h3>CHOOSE YOUR REVIEW</h3>
-<p>Thank you for visiting us!</p>
 
-<button class="review" onclick="copyReview(0)">
-Copy Review 1
-</button>
-<button class="review" onclick="copyReview(1)">
-Copy Review 2
-</button>
-<button class="review" onclick="copyReview(2)">
-Copy Review 3
-</button>
+<div class="container">
 
-<button class="google" onclick="window.open('https://g.page/r/CWkiEcK_xf32EBM/review','_blank')">
-⭐ POST YOUR GOOGLE REVIEW
-</button>
+  <div class="logo">✦</div>
 
-<button class="whatsapp" onclick="window.open('https://wa.me/918968368191','_blank')">
-WHATSAPP: 8968368191
-</button>
+  <h1>ROOP BODY SPA</h1>
+
+  <p class="subtitle">Luxury Wellness Experience</p>
+
+  <div class="line"></div>
+
+  <h2>WELCOME TO ROOP BODY SPA</h2>
+
+  <p class="description">
+    Thank you for visiting us!
+    We appreciate your valuable time.
+    Please share your experience with us
+    on Google.
+  </p>
+
+  <div class="line"></div>
+
+  <h2>⭐ CHOOSE YOUR REVIEW</h2>
+
+  <p class="description">
+    Select any review below and copy it.
+    You can paste it on Google.
+  </p>
+
+  <div class="review">
+    <p id="review1">
+      Excellent experience! Very clean and
+      comfortable atmosphere. Professional
+      service and friendly staff. Highly recommended!
+    </p>
+    <button class="copy" onclick="copyReview('review1')">
+      COPY REVIEW 1
+    </button>
+  </div>
+
+  <div class="review">
+    <p id="review2">
+      Wonderful experience at Roop Body Spa.
+      The ambience was relaxing and the
+      service was excellent. Will visit again!
+    </p>
+    <button class="copy" onclick="copyReview('review2')">
+      COPY REVIEW 2
+    </button>
+  </div>
+
+  <div class="review">
+    <p id="review3">
+      Great service, peaceful atmosphere
+      and a very nice experience.
+      Thank you Roop Body Spa!
+    </p>
+    <button class="copy" onclick="copyReview('review3')">
+      COPY REVIEW 3
+    </button>
+  </div>
+
+  <a class="link google"
+     href="https://g.page/r/CWkiEcK_xf32EBM/review"
+     target="_blank">
+     ⭐ WRITE A GOOGLE REVIEW
+  </a>
+
+  <div class="line"></div>
+
+  <h2>CONTACT US</h2>
+
+  <a class="link whatsapp"
+     href="https://wa.me/918968368191"
+     target="_blank">
+     WhatsApp Us
+  </a>
+
+  <a class="link call"
+     href="tel:+918968368191">
+     Call: +91 89683 68191
+  </a>
+
+  <a class="link location"
+     href="https://www.google.com/maps/search/?api=1&query=Roop+Body+Spa+Hussainpura+Chowk+Amritsar"
+     target="_blank">
+     📍 FIND OUR LOCATION
+  </a>
+
+  <p class="address">
+    <strong>Roop Body Spa</strong><br>
+    Hussainpura Chowk, Opposite Bus Stand,<br>
+    Town Hall, Sharifpura,<br>
+    Amritsar, Punjab – 143006
+  </p>
+
+  <div class="footer">
+    © 2026 Roop Body Spa. All Rights Reserved.
+  </div>
+
 </div>
 
 <script>
-const reviews = [
-"I had a wonderful experience at Roop Body Spa. The staff was professional and the atmosphere was relaxing. Highly recommended!",
-"Very nice experience. Clean environment, friendly staff and excellent service. I would love to visit again.",
-"Great hospitality and relaxing atmosphere. Really enjoyed my visit to Roop Body Spa. Thank you for the wonderful service!"
-];
+function copyReview(id) {
+  const text = document.getElementById(id).innerText;
 
-function copyReview(i) {
-navigator.clipboard.writeText(reviews[i])
-.then(() => alert("Review copied! Now paste it on Google."))
-.catch(() => alert("Please copy the review manually."));
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text)
+      .then(() => alert("Review copied! Now paste it on Google."))
+      .catch(() => fallbackCopy(text));
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  const area = document.createElement("textarea");
+  area.value = text;
+  document.body.appendChild(area);
+  area.select();
+
+  try {
+    document.execCommand("copy");
+    alert("Review copied! Now paste it on Google.");
+  } catch (e) {
+    alert("Please select and copy the review manually.");
+  }
+
+  document.body.removeChild(area);
 }
 </script>
+
 </body>
 </html>
