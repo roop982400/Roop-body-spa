@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roop Body Spa</title>
+<style>
+body {
+  font-family: Arial;
+  background: #17131c;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+.card {
+  max-width: 450px;
+  margin: auto;
+  background: #29212e;
+  padding: 25px;
+  border-radius: 18px;
+}
+h1 { color: #eac47b; }
+button {
+  width: 100%;
+  padding: 15px;
+  margin: 9px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.review { background: #f2d18d; }
+.whatsapp { background: #25D366; }
+.google { background: white; }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>ROOP BODY SPA</h1>
+<h3>CHOOSE YOUR REVIEW</h3>
+<p>Thank you for visiting us!</p>
+
+<button class="review" onclick="copyReview(0)">
+Copy Review 1
+</button>
+<button class="review" onclick="copyReview(1)">
+Copy Review 2
+</button>
+<button class="review" onclick="copyReview(2)">
+Copy Review 3
+</button>
+
+<button class="google" onclick="window.open('https://g.page/r/CWkiEcK_xf32EBM/review','_blank')">
+⭐ POST YOUR GOOGLE REVIEW
+</button>
+
+<button class="whatsapp" onclick="window.open('https://wa.me/918968368191','_blank')">
+WHATSAPP: 8968368191
+</button>
+</div>
+
+<script>
+const reviews = [
+"I had a wonderful experience at Roop Body Spa. The staff was professional and the atmosphere was relaxing. Highly recommended!",
+"Very nice experience. Clean environment, friendly staff and excellent service. I would love to visit again.",
+"Great hospitality and relaxing atmosphere. Really enjoyed my visit to Roop Body Spa. Thank you for the wonderful service!"
+];
+
+function copyReview(i) {
+navigator.clipboard.writeText(reviews[i])
+.then(() => alert("Review copied! Now paste it on Google."))
+.catch(() => alert("Please copy the review manually."));
+}
+</script>
+</body>
+</html>
