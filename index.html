@@ -4,249 +4,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roop Body Spa | Amritsar punjab 
-</title>
-
-<meta name="description" content="Welcome to Roop Body Spa, Amritsar. Contact us on WhatsApp, visit our location and share your Google review.">
+<title>Roop Body Spa - Google Reviews</title>
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #080808;
+  background: linear-gradient(135deg,#17121d,#3b2440,#17121d);
   color: white;
+  padding: 25px 15px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
   text-align: center;
 }
-
-header {
-  padding: 25px 15px;
-  border-bottom: 1px solid #b9974b;
+h1 {
+  color: #f4d18b;
+  font-size: 32px;
+  margin-bottom: 8px;
 }
-
-.logo {
-  color: #e6c36a;
-  font-size: 34px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 .subtitle {
-  color: #d4b76a;
-  letter-spacing: 4px;
-  margin-top: 10px;
-  font-size: 13px;
+  color: #eee;
+  margin-bottom: 25px;
 }
-
-.hero {
-  padding: 85px 20px;
-  background: linear-gradient(160deg, #19140b, #080808, #241b0b);
-}
-
-.hero h1 {
-  font-size: 38px;
-  color: #f0cf76;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: #ddd;
-  font-size: 17px;
-  line-height: 1.8;
-  max-width: 550px;
-  margin: auto;
-}
-
-.gold-line {
-  width: 90px;
-  height: 3px;
-  background: #d6b35e;
-  margin: 25px auto;
-}
-
-.section {
-  padding: 45px 20px;
-}
-
-.section h2 {
-  color: #e5c16d;
-  font-size: 27px;
-  margin-bottom: 20px;
-}
-
-.section p {
-  color: #ccc;
-  line-height: 1.8;
-}
-
-.buttons {
-  max-width: 420px;
-  margin: 25px auto;
-}
-
-.btn {
-  display: block;
-  text-decoration: none;
-  padding: 17px;
-  margin: 15px 0;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: bold;
-  border: 1px solid #d8b45e;
-  background: #d8b45e;
-  color: #080808;
-}
-
-.btn:hover {
-  background: #fff0bf;
-}
-
 .review {
-  background: #15120c;
-  padding: 35px 20px;
-  border-top: 1px solid #b9974b;
-  border-bottom: 1px solid #b9974b;
+  background: #fff;
+  color: #29212b;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 18px 0;
+  text-align: left;
+  box-shadow: 0 5px 20px #0005;
 }
-
-.copy-btn {
+.review h2 {
+  color: #9b6b25;
+  font-size: 19px;
+}
+textarea {
   width: 100%;
-  padding: 16px;
-  background: transparent;
-  border: 1px solid #d8b45e;
-  color: #e5c16d;
-  border-radius: 8px;
-  font-size: 16px;
+  min-height: 105px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  padding: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+}
+button {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 9px;
   margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
-
-footer {
-  padding: 30px 15px;
-  color: #aaa;
-  font-size: 13px;
-  line-height: 2;
+.copy {
+  background: #a77b36;
+  color: white;
 }
-
-footer strong {
-  color: #e5c16d;
+.google {
+  background: #198754;
+  color: white;
+  margin-top: 22px;
+}
+.note {
+  font-size: 13px;
+  color: #ddd;
+  line-height: 1.6;
+  margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
+<div class="container">
 
-<header>
-  <div class="logo">ROOP</div>
-  <div class="subtitle">BODY SPA</div>
-</header>
+<h1>ROOP BODY SPA</h1>
+<p class="subtitle">We Value Your Experience ❤️</p>
 
-<section class="hero">
-  <h1>Welcome to Roop Body Spa</h1>
-  <div class="gold-line"></div>
-  <p>
-    Experience comfort, relaxation and
-    professional wellness services.
-    Your comfort is our priority.
-  </p>
-</section>
+<h3>Choose Your Review</h3>
 
-<section class="section">
-  <h2>Our Welcome</h2>
-  <p>
-    Discover a peaceful and relaxing
-    environment at Roop Body Spa.
-    We look forward to welcoming you.
-  </p>
-</section>
+<div class="review">
+<h2>⭐ Review 1 – Simple & Professional</h2>
+<textarea id="r1">I had a good experience at Roop Body Spa. The staff was polite and welcoming. Thank you for the service!</textarea>
+<button class="copy" onclick="copyReview('r1',this)">📋 Copy Review 1</button>
+</div>
 
-<section class="section">
-  <h2>Contact & Booking</h2>
+<div class="review">
+<h2>⭐ Review 2 – Luxury Experience</h2>
+<textarea id="r2">My experience at Roop Body Spa was pleasant. I enjoyed the atmosphere and appreciated the hospitality. Would recommend visiting!</textarea>
+<button class="copy" onclick="copyReview('r2',this)">📋 Copy Review 2</button>
+</div>
 
-  <div class="buttons">
+<div class="review">
+<h2>⭐ Review 3 – Customer Service</h2>
+<textarea id="r3">Thank you Roop Body Spa for the service. The team was friendly and made me feel welcome. I appreciate the experience!</textarea>
+<button class="copy" onclick="copyReview('r3',this)">📋 Copy Review 3</button>
+</div>
 
-    <a class="btn"
-    href="https://wa.me/918968368191"
-    target="_blank">
-    WhatsApp Booking
-    </a>
+<p class="note">
+Please edit the review to reflect your genuine experience.
+Your honest feedback helps us improve.
+</p>
 
-    <a class="btn"
-    href="https://g.page/r/CWkiEcK_xf32EBM/review"
-    target="_blank">
-    ⭐ Give Google Review
-    </a>
+<button class="google" onclick="window.open('https://g.page/r/CWkiEcK_xf32EBM/review','_blank')">
+⭐ OPEN GOOGLE & POST YOUR REVIEW
+</button>
 
-    <a class="btn"
-    href="https://www.google.com/maps/search/?api=1&query=Roop+Body+Spa+Hussainpura+Chowk+Amritsar"
-    target="_blank">
-    📍 Find Our Location
-    </a>
-
-  </div>
-</section>
-
-<section class="review">
-  <h2>Share Your Experience</h2>
-
-  <p>
-    Thank you for visiting Roop Body Spa.
-    We appreciate your valuable feedback.
-  </p>
-
-  <button class="copy-btn" onclick="copyReview()">
-    Copy Review Text
-  </button>
-
-  <p id="message" style="margin-top:15px;color:#e5c16d;"></p>
-</section>
-
-<section class="section">
-  <h2>Visit Us</h2>
-
-  <p>
-    Roop Body Spa<br>
-    Hussainpura Chowk, Opposite Bus Stand<br>
-    Town Hall, Sharifpura<br>
-    Amritsar, Punjab 143006
-  </p>
-
-  <p style="margin-top:15px;color:#e5c16d;">
-    Call: +91 89683 68191
-  </p>
-</section>
-
-<footer>
-  <strong>ROOP BODY SPA</strong><br>
-  Amritsar, Punjab<br>
-  © 2026 Roop Body Spa. All Rights Reserved.
-</footer>
+</div>
 
 <script>
-function copyReview() {
-  const review =
-  "I had a wonderful experience at Roop Body Spa. The atmosphere was peaceful, the staff was welcoming and the service was excellent. Highly recommended!";
-
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(review)
-      .then(() => {
-        document.getElementById("message").innerText =
-        "Review text copied successfully!";
-      })
-      .catch(() => {
-        document.getElementById("message").innerText =
-        "Please copy the review manually.";
-      });
-  } else {
-    document.getElementById("message").innerText =
-    "Please copy the review manually.";
+async function copyReview(id,button) {
+  const text = document.getElementById(id).value;
+  try {
+    await navigator.clipboard.writeText(text);
+    button.innerText = "✓ Copied Successfully!";
+  } catch (e) {
+    const field = document.getElementById(id);
+    field.select();
+    document.execCommand("copy");
+    button.innerText = "✓ Copied!";
   }
+  setTimeout(() => {
+    button.innerText = "📋 Copy Review " + id.slice(1);
+  }, 2500);
 }
 </script>
 
 </body>
 </html>
-<!-- Website update -->
